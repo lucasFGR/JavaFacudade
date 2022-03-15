@@ -10,16 +10,17 @@ public class Aplication {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Produtct produtct = new Produtct();
+
 
         System.out.println("Enter product data: ");
 
         System.out.println("Name: ");
-        produtct.name = sc.nextLine();
+        String name = sc.nextLine();
         System.out.println("Price: ");
-        produtct.price = sc.nextDouble();
-        System.out.println("Quantity in stock: ");
-        produtct.quantity = sc.nextInt();
+        double price = sc.nextDouble();
+
+
+        Produtct produtct = new Produtct(name, price);
 
         System.out.println();
         System.out.println("Product data >> " + produtct);
