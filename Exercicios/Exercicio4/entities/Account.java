@@ -36,7 +36,7 @@ public class Account {
     }
 
     public void  withdrawMoney(double quantity){
-       balance -= quantity;
+       balance -= quantity + 5;
     }
     public String toString(){
 
@@ -45,7 +45,7 @@ public class Account {
                 + ", Holder: "
                 + name
                 + ", Balance: $ "
-                + balance;
+                + String.format("%.2f",balance);
     }
 
 }
