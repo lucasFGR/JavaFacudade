@@ -48,6 +48,8 @@ public class Application {
         for (Funcionario person: FuncionariosCad){
             if( person.getId() == idFuncionario){
                 person.AumentaSalario(porcentagem);
+            }else{
+                System.out.println("O id informado não existe!!");
             }
         }
 
